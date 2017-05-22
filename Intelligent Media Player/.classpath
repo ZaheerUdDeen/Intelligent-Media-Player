@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/Downloads/Bluemix/java-sdk-3.5.3-jar-with-dependencies.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/Downloads/Compressed/java-json.jar/java-json.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/Downloads/Bluemix/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/workspace/Retailor/Library/jfoenix.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/workspace/ImageRecognition/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/Downloads/Compressed/com.fasterxml.jackson.core.jar/com.fasterxml.jackson.core.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Zephyr/Downloads/Compressed/jackson-all-1.9.0.jar/jackson-all-1.9.0.jar"/>
+	<classpathentry kind="lib" path="Library/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="Library/TrayNotification.jar"/>
+	<classpathentry exported="true" kind="lib" path="Library/TrayTester.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/javacv0.10"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/openCV3.0">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Zephyr/Downloads/Programs/opencv/build/java/x64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

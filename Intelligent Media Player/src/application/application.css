@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.calendar{
+ 
+ -fx-background-color: 
+        #abeb59,
+        rgba(0,0,0,2.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+        linear-gradient(#f6ebbe, #d6e34d);
+    -fx-background-insets: 0,9 9 8 9,9,10,11;
+    -fx-background-radius: 50;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(20,2,2,0.1) , 2, 0.0 , 2 , 1);
+	
+  
+   
+  /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}
+.bt{
+	 -fx-border-radius: 50%;
+ 	 -fx-border: 1px solid red;
+ 	-fx-width: 100%;
+	-fx-height:0;
+	-fx-padding-bottom: 100%;
+    -fx-border-radius: 50%;
+	-fx-border:10px solid #cfdcec;
+    -fx-overflow:hidden;
+    
+    -fx-background: #4679BD; 
+    -fx-box-shadow: 0 0 3px gray;
+}
+
+.button{
+	-fx-border-top-right-radius: 30em;
+	
+}
+.label{
+	-fx-background-radius: 50;
+}

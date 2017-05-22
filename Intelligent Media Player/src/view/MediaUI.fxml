@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MediaUIController">
+   <children>
+      <Pane prefHeight="580.0" prefWidth="1166.0" style="-fx-background-color: #2A3132; -fx-background-radius: 18;">
+         <children>
+            <JFXSlider fx:id="mediaSlider" layoutX="17.0" layoutY="520.0" minorTickCount="1" prefHeight="14.0" prefWidth="699.0" style="-fx-background-image: #A9A9A9;">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.97" specularExponent="0.0" surfaceScale="8.59">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#99ff99" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </JFXSlider>
+            <Button layoutX="347.0" layoutY="537.0" mnemonicParsing="false" onAction="#playStatus" prefHeight="33.0" prefWidth="24.0" style="-fx-background-radius: 100;">
+               <graphic>
+                  <ImageView fx:id="planAndPauseIcon" fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imag/play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <JFXSlider fx:id="volumeSlider" blockIncrement="5.0" layoutX="635.0" layoutY="546.0" prefHeight="14.0" prefWidth="89.0" value="50.0">
+               <effect>
+                  <InnerShadow choke="0.84" color="#99ff99" radius="42.6175" width="151.47" />
+               </effect>
+            </JFXSlider>
+            <Button layoutX="15.0" layoutY="542.0" mnemonicParsing="false" onAction="#addVideo" prefHeight="14.0" prefWidth="56.0" style="-fx-background-radius: 100; -fx-background-color: #2A3132;" textFill="#1b1313">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imag/upload.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Pane layoutX="15.0" layoutY="8.0" prefHeight="495.0" prefWidth="699.0" style="-fx-background-color: #190315; -fx-background-radius: 20;">
+               <children>
+                  <MediaView fx:id="mediaView" fitHeight="470.0" fitWidth="650.0" layoutX="30.0" layoutY="10.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="sPane" layoutX="741.0" layoutY="14.0" prefHeight="493.0" prefWidth="405.0">
+               <children>
+                  <ImageView fx:id="img2" fitHeight="171.0" fitWidth="143.0" layoutX="151.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imag/load1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

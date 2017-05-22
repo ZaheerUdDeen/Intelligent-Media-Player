@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1166.0" style="-fx-background-color: #132020; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ImageLoader">
+   <children>
+      <StackPane fx:id="imageHolder" layoutY="1.0" prefHeight="580.0" prefWidth="204.0" style="-fx-background-color: #0074D9;">
+         <children>
+            <ListView fx:id="imageFilesList" prefHeight="556.0" prefWidth="347.0" style="-fx-background-color: #132020;" />
+         </children>
+      </StackPane>
+      <Button layoutX="216.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadImages" style="-fx-background-color: #e6e6e6;" text="Load Images" />
+      <Button layoutX="318.0" layoutY="14.0" mnemonicParsing="false" onAction="#showSummary" style="-fx-background-color: #e6e6e6;" text="Show Summary" />
+      <Pane fx:id="chartPane" layoutX="218.0" layoutY="49.0" prefHeight="530.0" prefWidth="944.0">
+         <children>
+            <BarChart fx:id="imageInformationChart" prefHeight="474.0" prefWidth="944.0" style="-fx-background-color: #D3D3D3;" title="Image Classification">
+               <xAxis>
+                  <CategoryAxis fx:id="classi" label="Class" prefHeight="32.0" prefWidth="347.0" side="BOTTOM" style="-fx-background-color: #D3D3D3;" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="scores" label="Confidence Score" prefHeight="274.0" prefWidth="49.0" side="LEFT" style="-fx-background-color: #D3D3D3;" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+      <Pane fx:id="summarrPane" layoutX="200.0" layoutY="49.0" prefHeight="530.0" prefWidth="957.0" visible="false">
+         <children>
+            <TextArea fx:id="sumarryText" prefHeight="530.0" prefWidth="957.0" promptText="Summaray Here" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
